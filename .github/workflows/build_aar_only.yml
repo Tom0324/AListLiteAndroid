@@ -28,9 +28,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Install Android SDK platform 34
-        uses: android-actions/setup-android@v3
-
       - name: Build alistlib.aar via gomobile
         working-directory: AListLib/scripts
         run: |
